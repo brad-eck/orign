@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body, #root { height:100%; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #05050f;
+  color: #e2e8f0;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(139, 92, 246, 0.15) 0%, transparent 30%),
+    radial-gradient(circle at 90% 80%, rgba(59, 130, 246, 0.15) 0%, transparent 30%),
+    radial-gradient(circle at 50% 50%, rgba(30, 41, 59, 0.8) 0%, #05050f 70%);
+}
+
+.container { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; }
+
+.header {
+  text-align: center; margin-bottom: 4rem; z-index: 10;
+}
+.header h1 {
+  font-size: 4.5rem; font-weight: 900; background: linear-gradient(135deg, #a78bfa, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+}
+.header p { font-size: 1.4rem; opacity: 0.9; margin-top: 0.5rem; }
+
+.card {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  padding: 4rem 3rem;
+  width: 100%;
+  max-width: 560px;
+  text-align: center;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+  transition: all 0.4s ease;
+}
+
+.dropzone {
+  cursor: pointer;
+  padding: 3rem;
+  border: 3px dashed rgba(255,255,255,0.25);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.dropzone:hover, .dropzone.drag-active {
+  border-color: #a78bfa;
+  background: rgba(167, 139, 250, 0.1);
+  transform: translateY(-8px);
+}
+
+.dropzone p { font-size: 2.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+.dropzone small { opacity: 0.8; font-size: 1.1rem; }
+
+.result h2 {
+  font-size: 8rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1;
+}
+.result .ai { background: linear-gradient(135deg, #f87171, #fb923c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.result .human { background: linear-gradient(135deg, #34d399, #6ee7b7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.result .uncertain { background: linear-gradient(135deg, #fbbf24, #fcd34d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.result p { font-size: 2rem; margin: 1rem 0 2rem; font-weight: 600; }
+.result button {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  border-radius: 999px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.result button:hover { background: rgba(167,139,250,0.4); transform: translateY(-2px); }
