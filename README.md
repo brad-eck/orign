@@ -1,4 +1,4 @@
-# Origin → AI-Generated Media Detector
+# Origin → AI Slop Detector
 
 One drag-and-drop. Any file. Instant probability: **Human or AI?**
 
